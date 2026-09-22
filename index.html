@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>कार्ड बेचो, पैसे कमाओ — घर बैठे कमाई | Card becho paise kamao</title>
+<meta name="description" content="क्रेडिट कार्ड, लोन और बचत खाता बेचकर घर बैठे कमाई करें। किसी भी प्रोडक्ट की पहली सेल पर ₹3,000 तक। ज़ीरो निवेश, मुफ़्त ट्रेनिंग, सब कुछ फ़ोन से।">
+<link rel="canonical" href="https://example.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="कार्ड बेचो, पैसे कमाओ — घर बैठे कमाई">
+<meta property="og:description" content="क्रेडिट कार्ड, लोन और बचत खाता बेचकर घर बैठे कमाई करें। पहली सेल पर ₹3,000 तक।">
+<meta property="og:url" content="https://example.com/">
+<meta property="og:locale" content="hi_IN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#07603f">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#07603f; --green-mid:#0b7d52; --green-lite:#0e9d69;
+  --ink:#131a24; --muted:#6b7280; --line:#e6e8eb; --soft:#fbfcfd; --gold:#ffd76a;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--ink);font:400 15px/1.55 'DM Sans',system-ui,-apple-system,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{width:100%;max-width:520px;margin:0 auto;background:#fff}
+h1,h2,h3{font-family:'Poppins',sans-serif;letter-spacing:-.02em;margin:0}
+
+/* top bar */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;display:flex;align-items:center;gap:8px;
+  padding:12px 16px;background:#fff;border-bottom:1px solid #eef0f3}
+.searchbox{display:flex;align-items:center;flex:1;min-width:0;height:38px;border:1px solid #dfe3e8;
+  border-radius:20px;background:#f7f8fa;overflow:hidden}
+.searchbox svg{margin:0 6px 0 12px;flex:none}
+.searchbox input{flex:1;min-width:0;border:0;background:none;outline:none;font:400 13.5px 'DM Sans',sans-serif;color:var(--ink);padding:0 12px 0 0}
+.langbtn{flex:none;height:38px;padding:0 13px;border:1px solid #cfe6da;border-radius:20px;background:#fff;
+  color:var(--green);font:600 12.5px 'DM Sans',sans-serif;cursor:pointer}
+
+/* banner */
+.banner{display:block;text-decoration:none;position:relative;overflow:hidden;color:#fff;padding:20px;
+  background:radial-gradient(120% 90% at 82% 6%,#12a06a 0%,var(--green) 58%,#04492f 100%)}
+.orb{position:absolute;right:-46px;top:-62px;width:172px;height:172px;border-radius:50%;background:rgba(255,255,255,.07)}
+.sweep{position:absolute;top:-40%;left:-30%;width:70px;height:190%;animation:sweep 6.5s ease-in-out infinite;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.16),transparent)}
+.card-g,.card-w{position:absolute;width:80px;height:51px;border-radius:10px}
+.card-g{right:12px;top:16px;background:linear-gradient(145deg,#ffd76a,#eda527);box-shadow:0 12px 26px rgba(0,0,0,.3);
+  transform:rotate(-13deg);animation:floatg 5s ease-in-out infinite}
+.card-w{right:42px;top:56px;background:linear-gradient(145deg,#fff,#d6e7df);box-shadow:0 14px 30px rgba(0,0,0,.32);
+  transform:rotate(8deg);animation:floatw 5.8s ease-in-out .4s infinite}
+.chip-mag{position:absolute;left:9px;top:19px;width:19px;height:14px;border-radius:4px}
+.stripe{position:absolute;left:9px;bottom:9px;height:5px;border-radius:3px}
+.pill{display:inline-flex;align-items:center;gap:6px;position:relative;background:rgba(255,255,255,.16);
+  border-radius:20px;padding:4px 10px;font:600 10px 'DM Sans',sans-serif;margin-bottom:9px}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--gold);animation:pulse 2s ease-in-out infinite}
+.banner h1{font:800 29px/1.05 'Poppins',sans-serif;letter-spacing:-.035em;position:relative;max-width:190px}
+.sub{display:block;margin-top:7px;font:500 12.5px 'DM Sans',sans-serif;color:rgba(255,255,255,.9);position:relative}
+.payout{display:flex;align-items:baseline;gap:6px;margin-top:10px;position:relative}
+.amount{font:800 24px 'Poppins',sans-serif;color:var(--gold);letter-spacing:-.02em}
+.terms{font:500 12.5px/1.25 'DM Sans',sans-serif;color:rgba(255,255,255,.88)}
+.cta{display:inline-flex;margin-top:13px;background:#fff;color:var(--green);border-radius:24px;padding:11px 23px;
+  font:700 13.5px 'Poppins',sans-serif;box-shadow:0 10px 24px rgba(0,0,0,.24);position:relative;animation:pop 4.5s ease-in-out infinite}
+
+/* goals + products */
+.section{padding:20px 16px 0}
+.section h2{font:700 19px 'Poppins',sans-serif}
+.goals{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding:14px 0 4px}
+.goals::-webkit-scrollbar{display:none}
+.goal{flex:none;height:36px;padding:0 15px;border-radius:20px;border:1px solid #dfe3e8;background:#fff;
+  color:#3c4043;font:600 12.5px 'DM Sans',sans-serif;cursor:pointer}
+.goal[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:#fff}
+.cats{padding:8px 16px 4px;display:flex;flex-direction:column;gap:10px}
+.cat{border:1.5px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;
+  box-shadow:0 1px 2px rgba(20,26,36,.04);transition:border-color .22s,box-shadow .22s}
+.cat[open]{border-color:var(--green-lite);box-shadow:0 8px 22px rgba(14,157,105,.16)}
+.cat summary{display:flex;align-items:center;gap:12px;padding:14px;cursor:pointer;list-style:none}
+.cat summary::-webkit-details-marker{display:none}
+.cat[open] summary{background:#f5fbf8}
+.glyph{width:40px;height:40px;flex:none;border-radius:11px;display:flex;align-items:center;justify-content:center;
+  font:700 16px 'Poppins',sans-serif}
+.cat-name{flex:1;min-width:0}
+.cat-name b{display:block;font:600 14px 'Poppins',sans-serif}
+.cat-name span{display:block;font:400 11.5px 'DM Sans',sans-serif;color:var(--muted);margin-top:2px}
+.chev{width:24px;height:24px;flex:none;border-radius:50%;background:#f1f3f5;color:#6b7280;display:flex;
+  align-items:center;justify-content:center;font-size:10px;transition:transform .25s}
+.cat[open] .chev{transform:rotate(180deg);background:var(--green-lite);color:#fff}
+.items{padding:2px 12px 12px;display:flex;flex-direction:column;gap:8px}
+.item{display:flex;align-items:center;gap:11px;padding:10px;border:1px solid #eef0f3;border-radius:10px;
+  background:var(--soft);text-decoration:none;color:inherit;transition:border-color .2s,background .2s}
+.item:hover,.item:focus-visible{border-color:#cfe6da;background:#f5fbf8}
+.logo{width:52px;height:34px;flex:none;border-radius:6px;border:1px solid var(--line);background:#fff;display:flex;
+  align-items:center;justify-content:center;text-align:center;font:700 8px/1.1 'Poppins',sans-serif;padding:2px}
+.item-txt{flex:1;min-width:0}
+.item-txt b{display:block;font:600 12.5px 'DM Sans',sans-serif}
+.item-txt span{display:block;font:400 10.5px 'DM Sans',sans-serif;color:var(--muted)}
+.apply{flex:none;height:32px;padding:0 14px;border-radius:8px;background:var(--green);color:#fff;
+  font:600 12px 'DM Sans',sans-serif;display:flex;align-items:center}
+.empty{padding:22px;text-align:center;color:var(--muted);font-size:13.5px}
+.contact{padding:24px 16px 4px;border-top:1px solid #eef0f3;margin-top:24px}
+.contact h2{font:700 19px 'Poppins',sans-serif}
+.contact p.lead{margin:6px 0 0;font:400 12.5px/1.6 'DM Sans',sans-serif;color:var(--muted)}
+.field{display:block;margin-top:11px}
+.field input,.field select,.field textarea{width:100%;border:1px solid #dfe3e8;border-radius:11px;background:#fff;
+  padding:12px 13px;font:400 14px 'DM Sans',sans-serif;color:var(--ink);outline:none}
+.field textarea{min-height:92px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--green-lite)}
+.send{width:100%;margin-top:13px;height:48px;border:0;border-radius:12px;background:var(--green);color:#fff;
+  font:700 14.5px 'Poppins',sans-serif;cursor:pointer}
+.send:hover{background:#075c3c}
+.hp{position:absolute;left:-9999px}
+footer{padding:26px 18px 30px;text-align:center;border-top:1px solid #eef0f3;margin-top:22px;
+  font:500 11.5px 'DM Sans',sans-serif;color:#9aa0a6}
+.disclosure{display:block;margin-top:6px;font:400 10.5px/1.5 'DM Sans',sans-serif;color:#adb3ba;max-width:44ch;margin-left:auto;margin-right:auto}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+@keyframes floatg{0%,100%{transform:rotate(-13deg) translateY(0)}50%{transform:rotate(-10.5deg) translateY(-7px)}}
+@keyframes floatw{0%,100%{transform:rotate(8deg) translateY(0)}50%{transform:rotate(6deg) translateY(-5px)}}
+@keyframes sweep{0%{transform:translateX(0) skewX(-18deg)}55%,100%{transform:translateX(560px) skewX(-18deg)}}
+@keyframes pop{0%,88%,100%{transform:scale(1)}94%{transform:scale(1.05)}}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.14);opacity:.82}}
+@media (prefers-reduced-motion:reduce){*{animation:none !important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="topbar">
+    <label class="searchbox">
+      <svg width="15" height="15" viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="5.2" fill="none" stroke="#3c4147" stroke-width="2"/><path d="M11 11l4 4" stroke="#3c4147" stroke-width="2" stroke-linecap="round"/></svg>
+      <input id="q" type="search" autocomplete="off" placeholder="प्रोडक्ट खोजें" aria-label="Product search" data-hi="प्रोडक्ट खोजें" data-en="Search products">
+    </label>
+    <button class="langbtn" id="lang" type="button">हिं</button>
+  </div>
+
+  <a class="banner" href="https://app.gromo.co.in/GvbQXOo3c6b" target="_blank" rel="noopener sponsored">
+    <span class="sweep" aria-hidden="true"></span>
+    <span class="orb" aria-hidden="true"></span>
+    <span class="card-g" aria-hidden="true"><i class="chip-mag" style="background:rgba(255,255,255,.75)"></i><i class="stripe" style="width:44px;background:rgba(255,255,255,.55)"></i></span>
+    <span class="card-w" aria-hidden="true"><i class="chip-mag" style="background:#e0b23c"></i><i class="stripe" style="width:50px;background:#b9c7c0"></i></span>
+    <span class="pill"><span class="dot" aria-hidden="true"></span><span data-hi="50 लाख+ पार्टनर" data-en="50 lakh+ partners">50 लाख+ पार्टनर</span></span>
+    <h1 data-hi="कार्ड बेचो,<br>पैसे कमाओ" data-en="Card becho,<br>paise kamao">कार्ड बेचो,<br>पैसे कमाओ</h1>
+    <span class="sub" data-hi="घर बैठे पैसे कमाएँ" data-en="Earn from home, on your phone">घर बैठे पैसे कमाएँ</span>
+    <span class="payout"><span class="amount">₹3,000</span><span class="terms" data-hi="किसी भी प्रोडक्ट की<br>पहली सेल पर" data-en="on 1st sale<br>of any product">किसी भी प्रोडक्ट की<br>पहली सेल पर</span></span>
+    <span class="cta" data-hi="मुफ़्त में शुरू करें" data-en="Start free">मुफ़्त में शुरू करें</span>
+  </a>
+
+  <div class="section">
+    <h2 data-hi="आज आपको क्या चाहिए?" data-en="What do you need today?">आज आपको क्या चाहिए?</h2>
+    <div class="goals" role="group" aria-label="Filter">
+      <button class="goal" data-goal="all" aria-pressed="true" data-hi="सभी" data-en="All">सभी</button>
+      <button class="goal" data-goal="card" aria-pressed="false" data-hi="कार्ड" data-en="Cards">कार्ड</button>
+      <button class="goal" data-goal="loan" aria-pressed="false" data-hi="लोन" data-en="Loans">लोन</button>
+      <button class="goal" data-goal="savings" aria-pressed="false" data-hi="बचत" data-en="Savings">बचत</button>
+      <button class="goal" data-goal="invest" aria-pressed="false" data-hi="निवेश" data-en="Invest">निवेश</button>
+    </div>
+  </div>
+
+  <div class="cats" id="cats">
+    <details class="cat" data-goal="card" open>
+      <summary>
+        <span class="glyph" style="background:#f1ebfe;color:#7c3aed" aria-hidden="true">▮</span>
+        <span class="cat-name"><b data-hi="क्रेडिट कार्ड" data-en="Credit Card">क्रेडिट कार्ड</b><span data-hi="कैशबैक कार्ड, लाइफटाइम फ्री विकल्प" data-en="Cashback cards, lifetime free options">कैशबैक कार्ड, लाइफटाइम फ्री विकल्प</span></span>
+        <span class="chev" aria-hidden="true">▼</span>
+      </summary>
+      <div class="items">
+        <a class="item" data-name="flipkart axis" href="https://sales.gromo.in/ac/2nu-kbMBNk" target="_blank" rel="noopener sponsored">
+          <span class="logo" style="color:#97144d">Flipkart Axis</span>
+          <span class="item-txt"><b>Flipkart Axis</b><span data-hi="फ्लिपकार्ट पर 5% कैशबैक, स्विगी-उबर पर 4%" data-en="5% cashback on Flipkart, 4% on Swiggy &amp; Uber">फ्लिपकार्ट पर 5% कैशबैक, स्विगी-उबर पर 4%</span></span>
+          <span class="apply" data-hi="अप्लाई करें" data-en="Apply">अप्लाई करें</span>
+        </a>
+        <a class="item" data-name="roarbank" href="https://sales.gromo.in/rr/2nu-kbMBNk" target="_blank" rel="noopener sponsored">
+          <span class="logo" style="color:#1a1a1a">Roarbank</span>
+          <span class="item-txt"><b>Roarbank</b><span data-hi="ज़ीरो जॉइनिंग फीस, 20% तक कैशबैक" data-en="Zero joining fee, up to 20% cashback">ज़ीरो जॉइनिंग फीस, 20% तक कैशबैक</span></span>
+          <span class="apply" data-hi="अप्लाई करें" data-en="Apply">अप्लाई करें</span>
+        </a>
+        <a class="item" data-name="indusind" href="https://sales.gromo.in/di/2nu-kbMBNk" target="_blank" rel="noopener sponsored">
+          <span class="logo" style="color:#8b1a2b">IndusInd</span>
+          <span class="item-txt"><b>IndusInd</b><span data-hi="वीकेंड पर 2X पॉइंट्स, फ्री मूवी टिकट" data-en="2X points on weekends, free movie tickets">वीकेंड पर 2X पॉइंट्स, फ्री मूवी टिकट</span></span>
+          <span class="apply" data-hi="अप्लाई करें" data-en="Apply">अप्लाई करें</span>
+        </a>
+        <a class="item" data-name="uni goldx" href="https://sales.gromo.in/ug/2nu-kbMBNk" target="_blank" rel="noopener sponsored">
+          <span class="logo" style="color:#c2761a">UNI GoldX</span>
+          <span class="item-txt"><b>UNI GoldX</b><span data-hi="1% गोल्ड कैशबैक, ज़ीरो फॉरेक्स मार्कअप" data-en="1% gold cashback, zero forex markup">1% गोल्ड कैशबैक, ज़ीरो फॉरेक्स मार्कअप</span></span>
+          <span class="apply" data-hi="अप्लाई करें" data-en="Apply">अप्लाई करें</span>
+        </a>
+        <a class="item" data-name="hdfc pixel play" href="https://sales.gromo.in/hpx/2nu-kbMBNk" target="_blank" rel="noopener sponsored">
+          <span class="logo" style="color:#004c8f">HDFC Pixel Play</span>
+          <span class="item-txt"><b>HDFC Pixel Play</b><span data-hi="2 मर्चेंट पैक पर 5% कैशबैक" data-en="5% cashback on 2 merchant packs">2 मर्चेंट पैक पर 5% कैशबैक</span></span>
+          <span class="apply" data-hi="अप्लाई करें" data-en="Apply">अप्लाई करें</span>
+        </a>
+      </div>
+    </details>
+    <details class="cat" data-goal="card">
+      <summary>
+        <span class="glyph" style="background:#fce7ec;color:#be123c" aria-hidden="true">◉</span>
+        <span class="cat-name"><b data-hi="सिक्योर्ड क्रेडिट कार्ड" data-en="Secured Credit Card">सिक्योर्ड क्रेडिट कार्ड</b><span data-hi="एफडी के बदले, सिबिल स्कोर ज़रूरी नहीं" data-en="Against FD, no CIBIL score needed">एफडी के बदले, सिबिल स्कोर ज़रूरी नहीं</span></span>
+        <span class="chev" aria-hidden="true">▼</span>
+      </summary>
+      <div class="items">
+        <a class="item" data-name="sbm novio" href="https://sales.gromo.in/om/2nu-kbMBNk" target="_blank" rel="noopener sponsored">
+          <span class="logo" style="color:#1f4e9c">SBM Novio</span>
+          <span class="item-txt"><b>SBM Novio</b><span data-hi="गारंटीड अप्रूवल, ₹2,000 से एफडी" data-en="Guaranteed approval, FD from ₹2,000">गारंटीड अप्रूवल, ₹2,000 से एफडी</span></span>
+          <span class="apply" data-hi="अप्लाई करें" data-en="Apply">अप्लाई करें</span>
+        </a>
+        <a class="item" data-name="indianoil axis" href="https://sales.gromo.in/ol/2nu-kbMBNk" target="_blank" rel="noopener sponsored">
+          <span class="logo" style="color:#97144d">IndianOil Axis</span>
+          <span class="item-txt"><b>IndianOil Axis</b><span data-hi="इनकम प्रूफ नहीं, फ्यूल पर 20X रिवॉर्ड" data-en="No income proof, 20X rewards on fuel">इनकम प्रूफ नहीं, फ्यूल पर 20X रिवॉर्ड</span></span>
+          <span class="apply" data-hi="अप्लाई करें" data-en="Apply">अप्लाई करें</span>
+        </a>
+      </div>
+    </details>
+    <details class="cat" data-goal="savings">
+      <summary>
+        <span class="glyph" style="background:#e7f7ee;color:#0e9d69" aria-hidden="true">₹</span>
+        <span class="cat-name"><b data-hi="बचत खाता" data-en="Savings Account">बचत खाता</b><span data-hi="ज़ीरो बैलेंस, ज़्यादा ब्याज" data-en="Zero balance, high interest">ज़ीरो बैलेंस, ज़्यादा ब्याज</span></span>
+        <span class="chev" aria-hidden="true">▼</span>
+      </summary>
+      <div class="items">
+        <a class="item" data-name="idfc first" href="https://sales.gromo.in/ia/2nu-kbMBNk" target="_blank" rel="noopener sponsored">
+          <span class="logo" style="color:#9c1d26">IDFC FIRST</span>
+          <span class="item-txt"><b>IDFC FIRST</b><span data-hi="7% तक ब्याज, ज़ीरो चार्ज" data-en="Up to 7% p.a., zero charges">7% तक ब्याज, ज़ीरो चार्ज</span></span>
+          <span class="apply" data-hi="अप्लाई करें" data-en="Apply">अप्लाई करें</span>
+        </a>
+        <a class="item" data-name="kotak 811" href="https://sales.gromo.in/vmhd/2nu-kbMBNk" target="_blank" rel="noopener sponsored">
+          <span class="logo" style="color:#c8102e">Kotak 811</span>
+          <span class="item-txt"><b>Kotak 811</b><span data-hi="ज़ीरो बैलेंस, 3 मिनट में खाता" data-en="Zero balance, opens in 3 minutes">ज़ीरो बैलेंस, 3 मिनट में खाता</span></span>
+          <span class="apply" data-hi="अप्लाई करें" data-en="Apply">अप्लाई करें</span>
+        </a>
+        <a class="item" data-name="kotak 811 5k" href="https://sales.gromo.in/tk/2nu-kbMBNk" target="_blank" rel="noopener sponsored">
+          <span class="logo" style="color:#c8102e">Kotak 811 5K</span>
+          <span class="item-txt"><b>Kotak 811 5K</b><span data-hi="ऑफ़र्स के साथ फ्री वर्चुअल डेबिट कार्ड" data-en="Free virtual debit card with offers">ऑफ़र्स के साथ फ्री वर्चुअल डेबिट कार्ड</span></span>
+          <span class="apply" data-hi="अप्लाई करें" data-en="Apply">अप्लाई करें</span>
+        </a>
+      </div>
+    </details>
+    <details class="cat" data-goal="loan">
+      <summary>
+        <span class="glyph" style="background:#fdf0e3;color:#c2761a" aria-hidden="true">◑</span>
+        <span class="cat-name"><b data-hi="पर्सनल लोन" data-en="Personal Loan">पर्सनल लोन</b><span data-hi="इंस्टेंट, पेपरलेस, घंटों में पैसा" data-en="Instant, paperless, money in hours">इंस्टेंट, पेपरलेस, घंटों में पैसा</span></span>
+        <span class="chev" aria-hidden="true">▼</span>
+      </summary>
+      <div class="items">
+        <a class="item" data-name="zapcash" href="https://loan.gromo.in/xa/2nu-kbMBNk" target="_blank" rel="noopener sponsored">
+          <span class="logo" style="color:#1a2b6b">Zapcash</span>
+          <span class="item-txt"><b>Zapcash</b><span data-hi="₹50,000 तक, मिनटों में अप्रूवल" data-en="Up to ₹50,000, approval in minutes">₹50,000 तक, मिनटों में अप्रूवल</span></span>
+          <span class="apply" data-hi="अप्लाई करें" data-en="Apply">अप्लाई करें</span>
+        </a>
+        <a class="item" data-name="credme" href="https://loan.gromo.in/cw/2nu-kbMBNk" target="_blank" rel="noopener sponsored">
+          <span class="logo" style="color:#0e9d69">CredMe</span>
+          <span class="item-txt"><b>CredMe</b><span data-hi="₹1.5 लाख तक, 45 दिन तक की अवधि" data-en="Up to ₹1.5L, tenure up to 45 days">₹1.5 लाख तक, 45 दिन तक की अवधि</span></span>
+          <span class="apply" data-hi="अप्लाई करें" data-en="Apply">अप्लाई करें</span>
+        </a>
+        <a class="item" data-name="ramfincorp" href="https://loan.gromo.in/ra/2nu-kbMBNk" target="_blank" rel="noopener sponsored">
+          <span class="logo" style="color:#e8811c">RamFincorp</span>
+          <span class="item-txt"><b>RamFincorp</b><span data-hi="सिर्फ़ पैन और आधार, 2 मिनट में पैसा" data-en="Only PAN &amp; Aadhaar, funds in 2 minutes">सिर्फ़ पैन और आधार, 2 मिनट में पैसा</span></span>
+          <span class="apply" data-hi="अप्लाई करें" data-en="Apply">अप्लाई करें</span>
+        </a>
+      </div>
+    </details>
+    <details class="cat" data-goal="invest">
+      <summary>
+        <span class="glyph" style="background:#e8f0fe;color:#1668e3" aria-hidden="true">◆</span>
+        <span class="cat-name"><b data-hi="डीमैट खाता" data-en="Demat Account">डीमैट खाता</b><span data-hi="मुफ़्त खाता खोलें, निवेश शुरू करें" data-en="Free opening, start investing">मुफ़्त खाता खोलें, निवेश शुरू करें</span></span>
+        <span class="chev" aria-hidden="true">▼</span>
+      </summary>
+      <div class="items">
+        <a class="item" data-name="upstox" href="https://sales.gromo.in/up/2nu-kbMBNk" target="_blank" rel="noopener sponsored">
+          <span class="logo" style="color:#5a2ed6">Upstox</span>
+          <span class="item-txt"><b>Upstox</b><span data-hi="ज़ीरो ओपनिंग चार्ज, पेपरलेस" data-en="Zero opening charges, paperless">ज़ीरो ओपनिंग चार्ज, पेपरलेस</span></span>
+          <span class="apply" data-hi="अप्लाई करें" data-en="Apply">अप्लाई करें</span>
+        </a>
+      </div>
+    </details>
+  </div>
+  <p class="empty" id="empty" hidden data-hi="कोई प्रोडक्ट नहीं मिला।" data-en="No products match.">कोई प्रोडक्ट नहीं मिला।</p>
+
+
+  <section class="contact" id="contact">
+    <h2 data-hi="कोई दिक्कत है? हमें बताइए" data-en="Facing a problem? Tell us">कोई दिक्कत है? हमें बताइए</h2>
+    <p class="lead" data-hi="अप्लाई करने में दिक्कत, स्टेटस की जानकारी या कोई और सवाल — नीचे भर दीजिए, हम आपसे संपर्क करेंगे।" data-en="Trouble applying, an application status question, or anything else — fill this in and we will get back to you.">अप्लाई करने में दिक्कत, स्टेटस की जानकारी या कोई और सवाल — नीचे भर दीजिए, हम आपसे संपर्क करेंगे।</p>
+
+    <form name="support" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks.html">
+      <input type="hidden" name="form-name" value="support">
+      <p class="hp"><label>Do not fill this in <input name="bot-field"></label></p>
+
+      <label class="field">
+        <input type="text" name="naam" required autocomplete="name" placeholder="आपका नाम" data-hi="आपका नाम" data-en="Your name">
+      </label>
+      <label class="field">
+        <input type="tel" name="mobile" required inputmode="tel" pattern="[0-9]{10}" maxlength="10" autocomplete="tel-national" placeholder="मोबाइल नंबर (10 अंक)" data-hi="मोबाइल नंबर (10 अंक)" data-en="Mobile number (10 digits)">
+      </label>
+      <label class="field">
+        <select name="vishay" required>
+          <option value="" data-hi="दिक्कत किस बारे में है?" data-en="What is this about?">दिक्कत किस बारे में है?</option>
+          <option value="apply" data-hi="अप्लाई करने में दिक्कत" data-en="Trouble applying">अप्लाई करने में दिक्कत</option>
+          <option value="status" data-hi="एप्लिकेशन का स्टेटस" data-en="Application status">एप्लिकेशन का स्टेटस</option>
+          <option value="eligibility" data-hi="मैं एलिजिबल हूँ या नहीं" data-en="Am I eligible?">मैं एलिजिबल हूँ या नहीं</option>
+          <option value="partner" data-hi="पार्टनर बनकर कमाई करनी है" data-en="I want to earn as a partner">पार्टनर बनकर कमाई करनी है</option>
+          <option value="other" data-hi="कुछ और" data-en="Something else">कुछ और</option>
+        </select>
+      </label>
+      <label class="field">
+        <textarea name="sandesh" placeholder="थोड़ा विस्तार से बताइए (वैकल्पिक)" data-hi="थोड़ा विस्तार से बताइए (वैकल्पिक)" data-en="Tell us a bit more (optional)"></textarea>
+      </label>
+      <button class="send" type="submit" data-hi="भेजें" data-en="Send">भेजें</button>
+    </form>
+  </section>
+
+  <footer>
+    <span data-hi="© 2026 · सर्वाधिकार सुरक्षित" data-en="© 2026 · All rights reserved">© 2026 · सर्वाधिकार सुरक्षित</span>
+    <span class="disclosure" data-hi="नियम व शर्तें लागू" data-en="T&amp;C apply">नियम व शर्तें लागू</span>
+  </footer>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+let lang = 'hi';
+
+function filter(){
+  const q = $('#q').value.trim().toLowerCase();
+  const goal = document.querySelector('.goal[aria-pressed="true"]').dataset.goal;
+  let shown = 0;
+  document.querySelectorAll('.cat').forEach(cat => {
+    const goalOk = goal === 'all' || cat.dataset.goal === goal;
+    let hits = 0;
+    cat.querySelectorAll('.item').forEach(it => {
+      const text = (it.dataset.name + ' ' + it.textContent).toLowerCase();
+      const ok = !q || text.includes(q) || cat.querySelector('.cat-name b').textContent.toLowerCase().includes(q);
+      it.hidden = !ok;
+      if (ok) hits++;
+    });
+    const show = goalOk && hits > 0;
+    cat.hidden = !show;
+    if (show){ shown++; if (q || goal !== 'all') cat.open = true; }
+  });
+  $('#empty').hidden = shown > 0;
+}
+
+function setLang(l){
+  lang = l;
+  document.documentElement.lang = l === 'hi' ? 'hi' : 'en';
+  $('#lang').textContent = l === 'hi' ? 'हिं' : 'EN';
+  document.querySelectorAll('[data-hi]').forEach(el => {
+    const v = l === 'hi' ? el.dataset.hi : el.dataset.en;
+    const tag = el.tagName;
+    if (tag === 'INPUT' || tag === 'TEXTAREA') el.placeholder = v;
+    else if (tag === 'OPTION') el.textContent = v;
+    else el.innerHTML = v;
+  });
+  try { localStorage.setItem('lang', l); } catch (e) {}
+}
+
+$('#lang').addEventListener('click', () => setLang(lang === 'hi' ? 'en' : 'hi'));
+$('#q').addEventListener('input', filter);
+document.querySelectorAll('.goal').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('.goal').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+  filter();
+}));
+try { if (localStorage.getItem('lang') === 'en') setLang('en'); } catch (e) {}
+</script>
+</body>
+</html>
